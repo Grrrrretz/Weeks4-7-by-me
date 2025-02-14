@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class S_SpawnObjectOnMouse : MonoBehaviour
 {
     public GameObject stone;
     public List<GameObject> spawnedObjects;
+    public Slider sliderA;
 
     // Start is called before the first frame update
     void Start()
@@ -22,7 +24,8 @@ public class S_SpawnObjectOnMouse : MonoBehaviour
         {
             GameObject SPAWN = Instantiate(stone, transform.position, Quaternion.identity);
             spawnedObjects.Add(SPAWN);
-        
+            float  slidervalue =  sliderA.value;
+            SPAWN.transform.localScale = Vector3.one * slidervalue;
         }
     }
 }

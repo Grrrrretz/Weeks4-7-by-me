@@ -25,7 +25,7 @@ public class S_SpawnObjectOnMouse : MonoBehaviour
             GameObject SPAWN = Instantiate(stone, transform.position, Quaternion.identity);
             spawnedObjects.Add(SPAWN);
             float  slidervalue =  sliderA.value;
-            SPAWN.transform.localScale = Vector3.one * slidervalue;
+            SPAWN.transform.localScale = Vector2.one * slidervalue;
         }
     }
 }

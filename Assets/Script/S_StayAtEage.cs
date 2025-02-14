@@ -16,6 +16,6 @@ public class S_StayAtEdge : MonoBehaviour
         Vector3 bottomL = Camera.main.ScreenToWorldPoint(new Vector3(0, 0, 0));//Get the world coordinates in the bottom left corner of the screen
 
 
-        uimove.position = new Vector3(bottomL.x + 2, 0, 0);
+        uimove.position = new Vector3(bottomL.x + 3.5f, 0, 0);
     }
 }

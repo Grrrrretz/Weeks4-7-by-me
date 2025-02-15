@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4793539341185838117}
   - component: {fileID: 8242412309178783778}
   - component: {fileID: 8459900707266384737}
+  - component: {fileID: -6259952321078762821}
   m_Layer: 0
   m_Name: mapPack_tilesheet_39
   m_TagString: Untagged
@@ -125,3 +126,19 @@ MonoBehaviour:
     m_RotationOrder: 4
   t: 1
   test: 0
+--- !u!114 &-6259952321078762821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8130784480494943369}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fd5fb3f5f36d244a90ea45d62fe7dce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colorchage: {fileID: 8242412309178783778}
+  Timer: 0
+  totaltime: 3
+  changing: 0

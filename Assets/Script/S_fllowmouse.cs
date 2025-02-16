@@ -16,10 +16,10 @@ public class S_Fllowthemouse : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector2 pos = Input.mousePosition;
+        Vector2 pos = Input.mousePosition;//Get the mouse position
 
-        pos = Camera.main.ScreenToWorldPoint(pos);
+        pos = Camera.main.ScreenToWorldPoint(pos);//Convert mouse position to world coordinates
 
-        transform.position = new Vector2(pos.x, pos.y);
+        transform.position = new Vector2(pos.x, pos.y);//The mouse world coordinates replace the object's XY world coordinates
     }
 }

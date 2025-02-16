@@ -28,7 +28,7 @@ public class S_StayAtEdge : MonoBehaviour
 
       float number1 = bottomR.x * 0.08f;
 
-    uimove.position = new Vector3(bottomR.x- bottomR.x* 5/3+ number1, 0, 0);
+    uimove.position = new Vector3(bottomR.x- bottomR.x* 5/3+ number1, 0, 0);//Dynamic values are used to control the real-time position of Canva on the screen, and I used this method because I wasn't sure if I could put another canvas inside the canvas
         test = bottomR.x - bottomR.x * 5/3;
         test1 = bottomR.x;
     }

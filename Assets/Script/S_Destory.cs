@@ -39,8 +39,9 @@ public class S_Destory : MonoBehaviour
         }
         if (Dead == true)
         {
+            Vector3 vector3 = transform.localScale;
             t += Time.deltaTime;
-            transform.localScale = Vector3.one * anim.Evaluate(t);
+            transform.localScale = vector3 * anim.Evaluate(t);
         }
     }
 
